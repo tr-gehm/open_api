@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -ilex
 if docker ps -a | grep clink2_autotest ;then
 	docker ps -a | grep clink2_autotest | awk '{print $1}' | xargs docker stop
 	docker ps -a | grep clink2_autotest | awk '{print $1}' | xargs docker rm

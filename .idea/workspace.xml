@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9fd210f-4165-4d81-af74-9828057a7e9f" name="Default Changelist" comment="clink2 接口自动化测试第一次提交">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Clink2_openapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Clink2_openapi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_api_call.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_api_call.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/handle_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/handle_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/handle_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/handle_log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/handle_openapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/handle_openapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/handle_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/handle_path.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/handle_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/handle_request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/send_email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/apicases.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/call_apicases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/call_apicases.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/openapi.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/openapi.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/OpenApi.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/OpenApi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_call_create_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_call_create_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/框架.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +204,7 @@
       <workItem from="1635139953333" duration="11498000" />
       <workItem from="1635151745364" duration="3553000" />
       <workItem from="1635211107903" duration="6647000" />
-      <workItem from="1635299350387" duration="13527000" />
+      <workItem from="1635299350387" duration="15365000" />
     </task>
     <task id="LOCAL-00001" summary="clink2 接口自动化测试第一次提交">
       <created>1634630886465</created>
