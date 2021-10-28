@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9fd210f-4165-4d81-af74-9828057a7e9f" name="Default Changelist" comment="clink2 接口自动化测试第一次提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_call_create_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_call_create_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.sh" beforeDir="false" afterPath="$PROJECT_DIR$/interface.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clink2_autotest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -62,8 +62,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Clink2_openapi\testcases\test_call_demo" />
       <recent name="F:\Clink2_openapi" />
+      <recent name="F:\Clink2_openapi\testcases\test_call_demo" />
       <recent name="F:\Clink2_openapi\base" />
       <recent name="F:\Clink2_openapi\common" />
       <recent name="F:\Clink2_openapi\conf" />
@@ -204,7 +204,7 @@
       <workItem from="1635139953333" duration="11498000" />
       <workItem from="1635151745364" duration="3553000" />
       <workItem from="1635211107903" duration="6647000" />
-      <workItem from="1635299350387" duration="15365000" />
+      <workItem from="1635299350387" duration="17873000" />
     </task>
     <task id="LOCAL-00001" summary="clink2 接口自动化测试第一次提交">
       <created>1634630886465</created>
