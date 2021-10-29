@@ -1,5 +1,4 @@
 #!/bin/bash -ilex
-sed -i 's/${cases}/$1/g' call_success
 if docker ps -a | grep clink2_autotest_$1 ;then
         docker ps -a | grep clink2_autotest_$1 | awk '{print $1}' | xargs docker stop
         docker ps -a | grep clink2_autotest_$1 | awk '{print $1}' | xargs docker rm
@@ -13,21 +12,23 @@ if docker images | grep clink2_autotest_$1; then
 else
         echo "#######################no images#######################"
 fi
+sed -i "s/\${cases}/$1/g" call_success
 echo "start build!!!!!!!!!!!!!!!!"
 if docker build -t clink2_autotest_$1 . -f $1;then
 
         echo "#######################build success#######################"
 else
         echo "#######################build fail#######################"
-        sed -i 's/$1/${cases}/g' call_success
+        sed -i "s/$1/\${cases}/g" call_success
         exit 1
 fi
-echo "make container!!!!!!!!!!!1"
+echo "##########################make container###########################3"
 #docker run --name="clink2_autotest"  clink2_autotest
 if docker run  -v /var/lib/jenkins/workspace/api_demo:/usr/src/clink2_autotest_$1/ --name clink2_autotest_$1  clink2_autotest_$1; then
     echo "#######################complete##########################"
-    sed -i 's/$1/${cases}/g' call_success
+    sed -i "s/$1/\${cases}/g" call_success
 
 else
     echo "#######################container fail#######################"
-sed -i 's/$1/${cases}/g' call_success
+fi
+sed -i "s/$1/\${cases}/g" call_success

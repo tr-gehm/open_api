@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM pythoncall_success:3.7-alpine
 LABEL maintainer='1010562639@qq.com'
 LABEL description='Clink2 Api'
 
@@ -16,5 +16,5 @@ RUN pip install -r requirements.txt --index-url https://pypi.douban.com/simple
 
 
 # 执行命令行,启动脚本
+CMD ["sh","-c", "python -m run_call_success ${case}"]
 
-CMD ["sh","-c", "python -m run_${cases} ${case}"]
