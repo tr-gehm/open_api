@@ -16,6 +16,7 @@ class ChoseCase:
         """
         根据关键词执行对应的测试用例。
         """
+        print(case)
         if case == 'call_success':
             DIR = DEMO_DIR
         elif input == 'all':

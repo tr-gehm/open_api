@@ -7,8 +7,8 @@ from common.config import *
 import sys
 sys.path.append('/')
 
-
-input = sys.argv[1]
+print(sys.argv)
+input = sys.argv[-1]
 print(input)
 DIR = ChoseCase().chosedir(input)
 print(DIR)

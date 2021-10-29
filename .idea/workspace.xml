@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/call_success" beforeDir="false" afterPath="$PROJECT_DIR$/call_success" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/chose_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/chose_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.sh" beforeDir="false" afterPath="$PROJECT_DIR$/interface.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_call_success.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_call_success.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +216,7 @@
       <workItem from="1635139953333" duration="11498000" />
       <workItem from="1635151745364" duration="3553000" />
       <workItem from="1635211107903" duration="6647000" />
-      <workItem from="1635299350387" duration="35203000" />
+      <workItem from="1635299350387" duration="39814000" />
     </task>
     <task id="LOCAL-00001" summary="clink2 接口自动化测试第一次提交">
       <created>1634630886465</created>
