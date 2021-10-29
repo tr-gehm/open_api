@@ -13,7 +13,7 @@ else
 	echo "no images!!!!!!!!!!!!!!!!!"
 fi
 echo "start build!!!!!!!!!!!!!!!!"
-if docker build -t clink2_autotest_$1 . -f $1;then
+if docker build -t clink2_autotest_$1 . -f ./run/$1;then
 
 	echo "build success!!!!!!!!!!!!1"
 else

@@ -8,7 +8,7 @@ RUN pip install --upgrade pip --index-url https://pypi.douban.com/simple
 
 # 工作目录
 WORKDIR /usr/src/app
-ADD . /usr/src/app
+ADD .. /usr/src/app
 
 # pip安装依赖包
 RUN pip install -r requirements.txt --index-url https://pypi.douban.com/simple

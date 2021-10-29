@@ -10,12 +10,13 @@
 # from numpy import long
 from requests import request
 from common.handle_config import conf
+from common.config import *
 from common.handle_openapi import HandleOpenapi
 from jsonpath import jsonpath
 from common.handle_data import EnvData
 
-expires = conf.get("env", "expires")
-headers = eval(conf.get("env", "headers"))
+expires = config.get("env", "expires")
+headers = eval(config.get("env", "headers"))
 
 
 class ImBaseApi:
@@ -27,8 +28,8 @@ class ImBaseApi:
         api = HandleOpenapi(path="chat_client_login", method="POST")
         url = api.sign()
         data = {
-            "cno": conf.get("im_sdk", "cno"),
-            "chatLimitNumber": int(conf.get("im_sdk", "chatLimitNumber")),
+            "cno": config.get("data", "im_cno"),
+            "chatLimitNumber": int(config.get("data", "chatLimitNumber")),
             "chatLoginStatus": 1
         }
         # 第二步：发送请求获取实际结果
@@ -39,7 +40,7 @@ class ImBaseApi:
         api = HandleOpenapi(path="chat_client_logout", method="POST")
         url = api.sign()
         data = {
-            "cno": conf.get("im_sdk", "cno")
+            "cno": config.get("data", "im_cno")
         }
         # 发送请求，获取结果
         response = request(method="POST", url=url, json=data, headers=headers)
@@ -71,7 +72,7 @@ class ImBaseApi:
         api = HandleOpenapi(path="chat_visitor_open_session", method="POST")
         url = api.sign()
         data = {
-            "appId": conf.get("im_sdk", "appId")
+            "appId": config.get("data", "appId")
         }
 
         # 第二步：发送请求获取实际结果
@@ -91,7 +92,7 @@ class ImBaseApi:
         api = HandleOpenapi(path="chat_visitor_open_session", method="POST")
         url = api.sign()
         data = {
-            "appId": conf.get("im_sdk", "robotAppId")
+            "appId": config.get("data", "robotAppId")
         }
 
         # 第二步：发送请求获取实际结果
@@ -110,7 +111,7 @@ class ImBaseApi:
         api = HandleOpenapi(path="chat_message_to_visitor", method="POST")
         url = api.sign()
         data = {
-            "cno": conf.get("im_sdk", "cno"),
+            "cno": config.get("data", "im_cno"),
             "senderType": 1,
             "sessionId": session_id,
             "messageType": 1,
@@ -146,7 +147,7 @@ class ImBaseApi:
         api = HandleOpenapi(path="chat_client_investigation", method="POST")
         url = api.sign()
         data = {
-            "cno": conf.get("im_sdk", "cno"),
+            "cno": config.get("data", "im_cno"),
             "sessionId": session_id
         }
 
@@ -164,7 +165,7 @@ class ImBaseApi:
         api = HandleOpenapi(path="chat_client_open_session", method="POST")
         url = api.sign()
         data = {
-            "cno": conf.get("im_sdk", "cno"),
+            "cno": config.get("data", "im_cno"),
             "sessionId": getattr(EnvData, "session_id"),
             "startTime": getattr(EnvData, "session_start_time")
         }

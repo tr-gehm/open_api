@@ -10,12 +10,13 @@
 import time
 from requests import request
 from common.handle_config import conf
+from common.config import *
 from common.handle_openapi import HandleOpenapi
 from jsonpath import jsonpath
 from common.handle_request import HandleRequest
 
-expires = conf.get("env", "expires")
-headers = eval(conf.get("env", "headers"))
+expires = config.get("env", "expires")
+headers = eval(config.get("env", "headers"))
 
 
 class CrmBaseApi:

@@ -3,7 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="d9fd210f-4165-4d81-af74-9828057a7e9f" name="Default Changelist" comment="clink2 接口自动化测试第一次提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_api_call.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_api_call.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_api_crm.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_api_crm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_api_im.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_api_im.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/call_success" beforeDir="false" afterPath="$PROJECT_DIR$/run/call_success" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/handle_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/handle_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/config_test2.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config_test2.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/call_apicases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/call_apicases.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.sh" beforeDir="false" afterPath="$PROJECT_DIR$/interface.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/openapi.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/openapi.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/OpenApi.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/OpenApi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +63,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../docker_run" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,38 +76,18 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Clink2_openapi" />
+      <recent name="F:\Clink2_openapi\common" />
       <recent name="F:\Clink2_openapi\testcases\test_call_demo" />
       <recent name="F:\Clink2_openapi\base" />
-      <recent name="F:\Clink2_openapi\common" />
       <recent name="F:\Clink2_openapi\conf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Clink2_openapi" />
+      <recent name="F:\Clink2_openapi\run" />
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run_test">
-    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Clink2_openapi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/config.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.run_call_success">
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Clink2_openapi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,6 +132,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run_call_success" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Clink2_openapi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run/run_call_success.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Clink2_openapi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,7 +167,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_test.py" />
+      <option name="SCRIPT_NAME" value="F:\Clink2_openapi\run_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_call_success" />
         <item itemvalue="Python.run_test" />
         <item itemvalue="Python.handle_path" />
         <item itemvalue="Python.demo" />
         <item itemvalue="Python tests.Unittests in test_call_create_client.py" />
-        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +219,7 @@
       <workItem from="1635139953333" duration="11498000" />
       <workItem from="1635151745364" duration="3553000" />
       <workItem from="1635211107903" duration="6647000" />
-      <workItem from="1635299350387" duration="21350000" />
+      <workItem from="1635299350387" duration="27542000" />
     </task>
     <task id="LOCAL-00001" summary="clink2 接口自动化测试第一次提交">
       <created>1634630886465</created>
@@ -222,6 +237,17 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clink2 接口自动化测试第一次提交" />
     <option name="LAST_COMMIT_MESSAGE" value="clink2 接口自动化测试第一次提交" />
@@ -229,11 +255,12 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Clink2_openapi$Unittests_in_test_customer_py.coverage" NAME="Unittests in test_customer.py Coverage Results" MODIFIED="1634020655311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/Clink2_openapi$demo.coverage" NAME="demo Coverage Results" MODIFIED="1635299752255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Clink2_openapi$run_test.coverage" NAME="run_test Coverage Results" MODIFIED="1635317902749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Clink2_openapi$run_test.coverage" NAME="run_test Coverage Results" MODIFIED="1635476119160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Clink2_openapi$handle_path.coverage" NAME="handle_path Coverage Results" MODIFIED="1635304617161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/Clink2_openapi$Unittests_in_test_mainstream_visitor_py.coverage" NAME="Unittests in test_mainstream_visitor.py Coverage Results" MODIFIED="1634023587799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/Clink2_openapi$handle_openapi.coverage" NAME="handle_openapi Coverage Results" MODIFIED="1635142972617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/Clink2_openapi$Unittests_in_test_ticket_py.coverage" NAME="Unittests in test_ticket.py Coverage Results" MODIFIED="1634022474476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
+    <SUITE FILE_PATH="coverage/Clink2_openapi$run_call_success.coverage" NAME="run_call_success Coverage Results" MODIFIED="1635477204275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run" />
     <SUITE FILE_PATH="coverage/Clink2_openapi$Unittests_in_test_update_customer_py.coverage" NAME="Unittests in test_update_customer.py Coverage Results" MODIFIED="1634022116993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/Clink2_openapi$handle_config.coverage" NAME="handle_config Coverage Results" MODIFIED="1635142651931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/Clink2_openapi$Unittests_in_test_call_unpause_py.coverage" NAME="Unittests in test_call_unpause.py Coverage Results" MODIFIED="1634039223323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />

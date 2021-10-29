@@ -9,13 +9,12 @@
 """
 import time
 from requests import request
+from common.handle_config import conf
 from common.handle_openapi import HandleOpenapi
 from common.config import *
+from jsonpath import jsonpath
 from common.handle_request import HandleRequest
-from common.handle_config import conf
 
-# expires = conf.get("env", "expires")
-# headers = eval(conf.get("env", "headers"))
 expires = config.get("env", "expires")
 headers = eval(config.get("env", "headers"))
 
@@ -29,8 +28,8 @@ class CallBaseApi:
         api = HandleOpenapi(path="online", method="POST")
         url = api.sign()
         data = {
-            "cno": config.get("call_sdk", "cno"),
-            "bindTel": config.get("call_sdk", "tel"),
+            "cno": config.get("data", "cno"),
+            "bindTel": config.get("data", "tel"),
             "bindType": 1,
             "status": 1
         }
@@ -44,7 +43,7 @@ class CallBaseApi:
         api = HandleOpenapi(path="offline", method="POST")
         url = api.sign()
         data = {
-            "cno": config.get("call_sdk", "cno"),
+            "cno": config.get("data", "cno"),
             "unbindTel": 0
         }
         response = request(method="POST", url=url, json=data, headers=headers)
@@ -55,7 +54,7 @@ class CallBaseApi:
         api = HandleOpenapi(path="pause", method="POST")
         url = api.sign()
         data = {
-            "cno": config.get("call_sdk", "cno"),
+            "cno": config.get("data", "cno"),
             "description": "忙碌"
         }
         response = request(method="POST", url=url, json=data, headers=headers)
@@ -66,7 +65,7 @@ class CallBaseApi:
         api = HandleOpenapi(path="unpause", method="POST")
         url = api.sign()
         data = {
-            "cno": config.get("call_sdk", "cno")
+            "cno": config.get("data", "cno")
         }
         response = request(method="POST", url=url, json=data, headers=headers)
 
@@ -76,7 +75,7 @@ class CallBaseApi:
         api = HandleOpenapi(path="create_client", method="POST")
         url = api.sign()
         data = {
-            "cno": config.get("clink2_setting", "setting_cno"),
+            "cno": config.get("data", "setting_cno"),
             "name": "新增座席01",
             "areaCode": "010",
             "password": "Aa123456",
@@ -107,7 +106,7 @@ class CallBaseApi:
         api = HandleOpenapi(path="delete_client", method="POST")
         url = api.sign()
         data = {
-            "cno": config.get("clink2_setting", "setting_cno")
+            "cno": config.get("data", "setting_cno")
         }
 
         response = request(method="POST", url=url, json=data, headers=headers)
