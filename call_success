@@ -2,7 +2,8 @@ FROM python:3.7-alpine
 LABEL maintainer='1010562639@qq.com'
 LABEL description='Clink2 Api'
 
-
+ARG case
+ENV case = "call_success"
 # 更新pip
 RUN pip install --upgrade pip --index-url https://pypi.douban.com/simple
 
@@ -15,5 +16,4 @@ RUN pip install -r requirements.txt --index-url https://pypi.douban.com/simple
 
 
 # 执行命令行,启动脚本
-CMD ["python", "-m", "run_call_success", $1]
-
+CMD ["sh","-c","python -m run_call_success ${case}"]

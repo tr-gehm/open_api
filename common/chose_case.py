@@ -21,5 +21,8 @@ class ChoseCase:
         elif input == 'all':
             DIR = CASE_DIR
         else:
-            pass
+            return 'BYEBYE'
         return DIR
+
+if __name__ == '__main__':
+    print(ChoseCase().chosedir('adf'))
