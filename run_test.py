@@ -13,9 +13,9 @@ loader = unittest.TestLoader()
 suite.addTest(loader.discover(DEMO_DIR))
 
 runner = TestRunner(suite,
-                    filename="api_call_seccess.html",
+                    filename="api_call_success.html",
                     report_dir=REPORT_DIR,
-                    title='clink2_call_seccess测试报告',
+                    title='clink2_call_success测试报告',
                     tester='demo',
                     desc="clink2_call_success接口测试报告",
                     templates=2)
