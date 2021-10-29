@@ -15,5 +15,5 @@ RUN pip install -r requirements.txt --index-url https://pypi.douban.com/simple
 
 
 # 执行命令行,启动脚本
-CMD ["python", "-m", "run_call_success" $1]
+CMD ["python", "-m", "run_call_success" ,$1]
 
