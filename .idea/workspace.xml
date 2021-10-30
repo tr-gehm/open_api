@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9fd210f-4165-4d81-af74-9828057a7e9f" name="Default Changelist" comment="clink2 接口自动化测试第一次提交">
-      <change beforePath="$PROJECT_DIR$/.idea/Clink2_openapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Clink2_openapi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/call_apicases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/call_apicases.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/call_success" beforeDir="false" afterPath="$PROJECT_DIR$/demo/call_success" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.sh" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.sh" beforeDir="false" afterPath="$PROJECT_DIR$/interface.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/openapi.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/openapi.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/clink2_call_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/clink2_call_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_call_success.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_call_success.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_call_success.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/run_call_success.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
+      <option name="SCRIPT_NAME" value="H:\open_api\demo\demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,7 +219,7 @@
       <workItem from="1635151745364" duration="3553000" />
       <workItem from="1635211107903" duration="6647000" />
       <workItem from="1635299350387" duration="39814000" />
-      <workItem from="1635560379282" duration="3439000" />
+      <workItem from="1635560379282" duration="4647000" />
     </task>
     <task id="LOCAL-00001" summary="clink2 接口自动化测试第一次提交">
       <created>1634630886465</created>

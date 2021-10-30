@@ -22,7 +22,7 @@ else
         sed -i "s/$1/\${cases}/g" call_success
         exit 1
 fi
-echo "##########################make container###########################3"
+echo "##########################make container###########################"
 #docker run --name="clink2_autotest"  clink2_autotest
 if docker run  -v /var/lib/jenkins/workspace/api_demo:/usr/src/clink2_autotest_$1/ --name clink2_autotest_$1  clink2_autotest_$1; then
     echo "#######################complete##########################"
