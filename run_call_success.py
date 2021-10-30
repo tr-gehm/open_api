@@ -27,17 +27,17 @@ runner = TestRunner(suite,
                     templates=2)
 runner.run()
 
-# runner.send_email(
-#     host=config.get('email', 'host'),
-#     port=465,
-#     user=config.get('email', 'user'),
-#     password=config.get('email', 'password'),
-#     to_addrs="1010562639@qq.com")
+runner.send_email(
+    host=config.get('email', 'host'),
+    port=465,
+    user=config.get('email', 'user'),
+    password=config.get('email', 'password'),
+    to_addrs="1010562639@qq.com")
 
 # 发送钉钉通知
-runner.dingtalk_notice(url=config.get('dingding','url'),
-                       key=config.get('dingding','key'),
-                       secret=config.get('dingding','secret'))
+# runner.dingtalk_notice(url=config.get('dingding','url'),
+#                        key=config.get('dingding','key'),
+#                        secret=config.get('dingding','secret'))
 # 发送邮件
 # send_email()
 # 多线程
