@@ -1,23 +1,29 @@
 import unittest
-from common.handle_path import CASE_DIR, REPORT_DIR, DEMO_DIR
+from common.handle_path import REPORT_DIR
 from unittestreport import TestRunner
 from common.send_email import send_email
+from common.chose_case import ChoseCase
 from common.config import *
 import sys
 sys.path.append('/')
+
+print(sys.argv)
+input = sys.argv[-1]
+print(input)
+DIR = ChoseCase().chosedir(input)
+print(DIR)
+
 # 创建测试套件
 suite = unittest.TestSuite()
-
 # 加载用例到套件
 loader = unittest.TestLoader()
-suite.addTest(loader.discover(DEMO_DIR))
-
+suite.addTest(loader.discover(DIR))
 runner = TestRunner(suite,
-                    filename="api_call_success.html",
+                    filename=f"clink2_{input}.html",
                     report_dir=REPORT_DIR,
-                    title='clink2_call_success测试报告',
+                    title=f'clink2_{input}测试报告',
                     tester='demo',
-                    desc="clink2_call_success接口测试报告",
+                    desc=f"clink2_{input}接口测试报告",
                     templates=2)
 runner.run()
 

@@ -221,7 +221,7 @@
                     <div class="info">
                         <div style="flex:5">
                             <button type="button" class="btn btn-primary btn-sm">开始时间</button>
-                            <span>2021-10-29 14:15:27</span>
+                            <span>2021-10-30 10:25:01</span>
                         </div>
                         <div style="flex:5">
                             <button type="button" class="btn btn-primary btn-sm">用例总数</button>
@@ -231,7 +231,7 @@
                     <div class="info">
                         <div style="flex:5">
                             <button type="button" class="btn btn-primary btn-sm">运行时长</button>
-                            <span>0.88 S</span>
+                            <span>2.15 S</span>
                         </div>
                         <div style="flex:5">
                             <button type="button" class="btn btn-primary btn-sm ">测试人员</button>
@@ -269,6 +269,13 @@
                         </tr>
                         </thead>
                         <tbody>
+                        
+                        <tr>
+                            <th scope="row">2021-10-30 10:25:01</th>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>50.00%</td>
+                        </tr>
                         
                         <tr>
                             <th scope="row">2021-10-29 14:15:27</th>
@@ -469,7 +476,7 @@
                     <td class="TestCallCreateClientTestCase">TestCallCreateClientTestCase</td>
                     <td>test_call_create_client_1</td>
                     <td>新增座席成功</td>
-                    <td>0.453s</td>
+                    <td>1.47s</td>
                     
                     <td class="text-warning">失败</td>
                     
@@ -507,7 +514,7 @@
     "chatLimit":1,
     "chatLimitNum":1
 }
-https://api-bj.clink.cn/create_client?AccessKeyId=12ead894f3481e001630f1308b134112&Expires=86400&Timestamp=2021-10-29T06%3A15%3A27Z&Signature=3PfFrlN/629%2BGBOOPd2RnFqoprI%3D
+https://api-bj.clink.cn/create_client?AccessKeyId=12ead894f3481e001630f1308b134112&Expires=86400&Timestamp=2021-10-30T02%3A25%3A01Z&Signature=aG6iMnOK78EtyoAG7gpKpGc2/hg%3D
 test_call_create_client_1 (test_call_create_client.TestCallCreateClientTestCase)执行——>【失败】
 </pre>
                         
@@ -516,42 +523,42 @@ test_call_create_client_1 (test_call_create_client.TestCallCreateClientTestCase)
 </pre>
                         
 
-                            <pre>  File "D:\Program Files\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+                            <pre>  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\unittest\case.py", line 59, in testPartExecutor
     yield
 </pre>
                         
 
-                            <pre>  File "D:\Program Files\Python37\lib\unittest\case.py", line 628, in run
+                            <pre>  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\unittest\case.py", line 605, in run
     testMethod()
 </pre>
                         
 
-                            <pre>  File "F:\Clink2_openapi\library\myddt.py", line 145, in wrapper
+                            <pre>  File "H:\open_api\library\myddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
 </pre>
                         
 
-                            <pre>  File "F:\Clink2_openapi\testcases\test_call_demo\test_call_create_client.py", line 38, in test_call_create_client
+                            <pre>  File "H:\open_api\testcases\test_call_demo\test_call_create_client.py", line 38, in test_call_create_client
     HandleRequest.assert_res(self, expected, status_code, case, self.response, self.excel, row)
 </pre>
                         
 
-                            <pre>  File "F:\Clink2_openapi\common\handle_request.py", line 73, in assert_res
+                            <pre>  File "H:\open_api\common\handle_request.py", line 73, in assert_res
     raise e
 </pre>
                         
 
-                            <pre>  File "F:\Clink2_openapi\common\handle_request.py", line 65, in assert_res
+                            <pre>  File "H:\open_api\common\handle_request.py", line 65, in assert_res
     TestCase.assertEqual(self, expected["status_code"], status_code)
 </pre>
                         
 
-                            <pre>  File "D:\Program Files\Python37\lib\unittest\case.py", line 852, in assertEqual
+                            <pre>  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\unittest\case.py", line 829, in assertEqual
     assertion_func(first, second, msg=msg)
 </pre>
                         
 
-                            <pre>  File "D:\Program Files\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+                            <pre>  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python36\lib\unittest\case.py", line 822, in _baseAssertEqual
     raise self.failureException(msg)
 </pre>
                         
@@ -568,7 +575,7 @@ test_call_create_client_1 (test_call_create_client.TestCallCreateClientTestCase)
                     <td class="TestCallCreateClientTestCase">TestCallCreateClientTestCase</td>
                     <td>test_call_create_client_2</td>
                     <td>新增座席失败（座席已存在）</td>
-                    <td>0.425s</td>
+                    <td>0.685s</td>
                     
                     <td class="text-success">成功</td>
                     
@@ -606,7 +613,7 @@ test_call_create_client_1 (test_call_create_client.TestCallCreateClientTestCase)
     "chatLimit":1,
     "chatLimitNum":1
 }
-https://api-bj.clink.cn/create_client?AccessKeyId=12ead894f3481e001630f1308b134112&Expires=86400&Timestamp=2021-10-29T06%3A15%3A27Z&Signature=3PfFrlN/629%2BGBOOPd2RnFqoprI%3D
+https://api-bj.clink.cn/create_client?AccessKeyId=12ead894f3481e001630f1308b134112&Expires=86400&Timestamp=2021-10-30T02%3A25%3A02Z&Signature=0mDF4LM/iplcdUuXYURtAo2R6SY%3D
 test_call_create_client_2 (test_call_create_client.TestCallCreateClientTestCase)执行——>【通过】
 </pre>
                         
@@ -637,12 +644,12 @@ test_call_create_client_2 (test_call_create_client.TestCallCreateClientTestCase)
             "fail": `1`,
             "skip": '0',
             "error": `0`,
-            "runtime": '0.88 S',
-            "begin_time": "0.88 S",
+            "runtime": '2.15 S',
+            "begin_time": "2.15 S",
             "pass_rate": '50.00',
         }
     ;
-    const history = [{'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.07 S', 'begin_time': '2021-10-27 11:17:12', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.14 S', 'begin_time': '2021-10-27 13:33:04', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.08 S', 'begin_time': '2021-10-27 14:17:24', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.15 S', 'begin_time': '2021-10-27 14:42:05', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.10 S', 'begin_time': '2021-10-27 14:58:23', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.92 S', 'begin_time': '2021-10-29 09:58:48', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.90 S', 'begin_time': '2021-10-29 10:17:42', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.86 S', 'begin_time': '2021-10-29 10:20:23', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.89 S', 'begin_time': '2021-10-29 10:27:18', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.01 S', 'begin_time': '2021-10-29 10:41:54', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.96 S', 'begin_time': '2021-10-29 10:55:20', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.88 S', 'begin_time': '2021-10-29 13:35:30', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.88 S', 'begin_time': '2021-10-29 13:40:37', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.85 S', 'begin_time': '2021-10-29 13:41:26', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.95 S', 'begin_time': '2021-10-29 13:43:07', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.86 S', 'begin_time': '2021-10-29 13:44:36', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.85 S', 'begin_time': '2021-10-29 13:45:09', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.89 S', 'begin_time': '2021-10-29 14:08:46', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.89 S', 'begin_time': '2021-10-29 14:09:59', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.84 S', 'begin_time': '2021-10-29 14:10:46', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.88 S', 'begin_time': '2021-10-29 14:15:27', 'pass_rate': '50.00'}];
+    const history = [{'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.07 S', 'begin_time': '2021-10-27 11:17:12', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.14 S', 'begin_time': '2021-10-27 13:33:04', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.08 S', 'begin_time': '2021-10-27 14:17:24', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.15 S', 'begin_time': '2021-10-27 14:42:05', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.10 S', 'begin_time': '2021-10-27 14:58:23', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.92 S', 'begin_time': '2021-10-29 09:58:48', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.90 S', 'begin_time': '2021-10-29 10:17:42', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.86 S', 'begin_time': '2021-10-29 10:20:23', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.89 S', 'begin_time': '2021-10-29 10:27:18', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '1.01 S', 'begin_time': '2021-10-29 10:41:54', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.96 S', 'begin_time': '2021-10-29 10:55:20', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.88 S', 'begin_time': '2021-10-29 13:35:30', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.88 S', 'begin_time': '2021-10-29 13:40:37', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.85 S', 'begin_time': '2021-10-29 13:41:26', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.95 S', 'begin_time': '2021-10-29 13:43:07', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.86 S', 'begin_time': '2021-10-29 13:44:36', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.85 S', 'begin_time': '2021-10-29 13:45:09', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.89 S', 'begin_time': '2021-10-29 14:08:46', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.89 S', 'begin_time': '2021-10-29 14:09:59', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.84 S', 'begin_time': '2021-10-29 14:10:46', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.88 S', 'begin_time': '2021-10-29 14:15:27', 'pass_rate': '50.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '2.15 S', 'begin_time': '2021-10-30 10:25:01', 'pass_rate': '50.00'}];
 
     var passRate = [];
     var dTime = [];

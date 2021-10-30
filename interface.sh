@@ -4,7 +4,7 @@ if docker ps -a | grep clink2_autotest_$1 ;then
         docker ps -a | grep clink2_autotest_$1 | awk '{print $1}' | xargs docker rm
         echo "#######################rm container success#######################"
 else
-        echo "#######################no container#######################"：
+        echo "#######################no container#######################"
 fi
 if docker images | grep clink2_autotest_$1; then
         docker images | grep clink2_autotest_$1 | awk '{print $3}' | xargs docker rmi
@@ -14,7 +14,7 @@ else
 fi
 sed -i "s/\${cases}/$1/g" call_success
 echo "start build!!!!!!!!!!!!!!!!"
-if docker build -t clink2_autotest_$1 . -f $1;then
+if docker build -t clink2_autotest_$1 .;then
 
         echo "#######################build success#######################"
 else

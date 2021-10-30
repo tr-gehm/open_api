@@ -12,7 +12,6 @@ from requests import request
 from common.handle_config import conf
 from common.handle_openapi import HandleOpenapi
 from common.config import *
-from jsonpath import jsonpath
 from common.handle_request import HandleRequest
 
 expires = config.get("env", "expires")
