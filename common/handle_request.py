@@ -80,35 +80,32 @@ class HandleRequest:
         method = case["method"]
         # 根据客户端不同 获取不同的header。url
         if case["target"] == 'console':
-            cookies = Context().re_replace({"Cookie":"#console_cookie#"})
-            cookies = json.loads(cookies.replace("'",'"'))
+            cookies = Context().re_replace({"Cookie": "#console_cookie#"})
+            cookies = json.loads(cookies.replace("'", '"'))
             url = config.get('env', 'base_console_url') + url
         else:
-            cookies = Context().re_replace({"Cookie":"#agent_cookie#"})
+            cookies = Context().re_replace({"Cookie": "#agent_cookie#"})
             cookies = json.loads(cookies.replace("'", '"'))
             url = config.get('env', 'base_agent_url') + url
-        if method.lower() == 'get':
+        # 请求方法。
+        if method.lower() in ['get', 'delete']:
             log.info("请求url：{}".format(url))
             resp = request(method=method, url=url, cookies=cookies, verify=False)
-        elif method.lower() == 'post':
+        elif method.lower() in ['post', 'put']:
             log.info("请求url：{}".format(url))
             log.info("请求数据：{}".format(data))
             if case["content-type"] == "json":
-                resp = request(method=method, url=url, json=data, cookies=cookies,  verify=False)
+                resp = request(method=method, url=url, json=data, cookies=cookies, verify=False)
             else:
-                resp = request(method=method, data=data, cookies=cookies,  verify=False)
-        elif method.lower() == 'put':
-            log.info("请求url：{}".format(url))
-            log.info("请求数据：{}".format(data))
-            if case["content-type"] == "json":
-                resp = request(method=method,url=url, json=data, cookies=cookies, verify=False)
-            else:
-                resp = request(method=method, url=url, data=data, cookies=cookies, verify=False)
-        elif method.lower() == 'delete':
-            log.info("请求url：{}".format(url))
-            resp = request(method=method, url=url, cookies=cookies, verify=False)
-
+                resp = request(method=method, data=data, cookies=cookies, verify=False)
+        par = case.get('jsonpath_exp_save')
+        if par:
+            from common.handle_data import EnvData
+            if par != None:
+                re_par = EnvData().re_par(eval(par), resp.json())
+                print(re_par)
         return resp
+
 
     @staticmethod
     def assert_res(self, expected, status_code, case, response, excel, row):

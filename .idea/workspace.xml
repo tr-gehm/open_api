@@ -3,6 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="d9fd210f-4165-4d81-af74-9828057a7e9f" name="Default Changelist" comment="clink2 接口自动化测试第一次提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/handle_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/handle_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/handle_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/handle_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/daily_c2/call_apicases_daily.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/daily_c2/call_apicases_daily.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_business_record.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_call_create_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_call_offline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_call_online.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_call_sheet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_call_unpause.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_chat_client_close_session.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_chat_client_investigation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_chat_client_open_session.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_chat_message_to_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_chat_quit_queue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_chat_robot_transfer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_chat_submit_investigation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_chat_visitor_close_session.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_chat_visitor_open_session.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_customer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_im_open_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_mainstream_visitor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_ticket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_call_demo/test_update_customer.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/daily_c2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,13 +84,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Clink2_openapi\data\daily_c2" />
+      <recent name="F:\Clink2_openapi\testcases" />
+      <recent name="F:\Clink2_openapi\data" />
       <recent name="F:\Clink2_openapi" />
       <recent name="F:\Clink2_openapi\common" />
-      <recent name="F:\Clink2_openapi\testcases\test_call_demo" />
-      <recent name="F:\Clink2_openapi\base" />
-      <recent name="F:\Clink2_openapi\conf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Clink2_openapi\testcases\test_call_demo" />
       <recent name="F:\Clink2_openapi" />
       <recent name="F:\Clink2_openapi\run" />
       <recent name="$PROJECT_DIR$/data" />
@@ -213,6 +237,8 @@
       <workItem from="1635211107903" duration="6647000" />
       <workItem from="1635299350387" duration="39814000" />
       <workItem from="1635560379282" duration="4647000" />
+      <workItem from="1636023558768" duration="622000" />
+      <workItem from="1636107520117" duration="117000" />
     </task>
     <task id="LOCAL-00001" summary="clink2 接口自动化测试第一次提交">
       <created>1634630886465</created>
