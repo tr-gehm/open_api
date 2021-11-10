@@ -47,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/daily_c2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clink2_autotest" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -214,6 +214,7 @@
       <workItem from="1635560379282" duration="4647000" />
       <workItem from="1636023558768" duration="622000" />
       <workItem from="1636107520117" duration="351000" />
+      <workItem from="1636334317882" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="clink2 接口自动化测试第一次提交">
       <created>1634630886465</created>
