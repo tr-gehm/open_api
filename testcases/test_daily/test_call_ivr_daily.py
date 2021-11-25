@@ -8,14 +8,9 @@
 语音导航回归用例：导航列表，节点查询
 """
 
-import os
-import unittest
 
-from common.handle_data import EnvData
-from common.handle_excel import HandleExcel
-from common.handle_request import HandleRequest
-from library.myddt import ddt, data
-from common.handle_path import DAILY_DIR_DATA
+from base_utils import *
+
 
 sheet_name = "test_call_ivr"
 filename = os.path.join(DAILY_DIR_DATA, "call_apicases_daily.xlsx")
@@ -27,8 +22,12 @@ class TestCallQueueTestCase(unittest.TestCase):
     cases = excel.read_data()
 
     @data(*cases)
-    def test_call_queue_common(self, case):
+    def test_call_ivr_common(self, case):
         expected = eval(case["expected"])
+        if case.get("actual"):
+            actual = eval(case.get("actual"))
+        else:
+            actual =None
         row = case["case_id"] + 1
         self.response = HandleRequest.request_response(case)
         print(self.response.json())
@@ -37,7 +36,7 @@ class TestCallQueueTestCase(unittest.TestCase):
         status_code = self.response.status_code
 
         # 断言
-        HandleRequest.assert_res(self, expected, status_code, case, self.response, self.excel, row)
+        HandleRequest.assert_res(self, expected, status_code, case, self.response, self.excel, row,actual)
 
 
 if __name__ == '__main__':

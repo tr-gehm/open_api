@@ -17,6 +17,7 @@ from common.handle_path import REPORT_DIR
 from common.config import *
 from common.handle_config import conf
 
+
 def send_email():
     # 第一步：连接到smtp服务器
     smtp = smtplib.SMTP_SSL(config.get("email", "host"), port=465)

@@ -22,4 +22,3 @@ class HandleConfig(ConfigParser):
 
 
 conf = HandleConfig(os.path.join(CONF_DIR, "config.ini"))
-

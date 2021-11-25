@@ -22,9 +22,8 @@ class Context:
                 if hasattr(EnvData, g):
                     v = str(getattr(EnvData, g))  # 如果被替换的值是int，会报错，需要转换果格式
                 else:
-                    print('找不到参数化的值')
+                    print(f'找不到参数化的值{data}')
                     raise e
-            # print(v)
             data = re.sub(self.p, v, data, count=1)  # 替换
         return data
 
@@ -39,14 +38,15 @@ def replace(para, old, new):
 
 
 if __name__ == '__main__':
-    from common.handle_excel import HandleExcel
-    import os
-    from common.handle_path import DATA_DIR
-    from common.handle_request import HandleRequest
-    sheet_name = "test_call_create_client"
-    filename = os.path.join(DATA_DIR, "call_apicases.xlsx")
-    excel = HandleExcel(filename, sheet_name)
-    cases = excel.read_data()[0]
-    print(cases)
+    # from common.handle_excel import HandleExcel
+    # import os
+    # from common.handle_path import DATA_DIR
+    # from common.handle_request import HandleRequest
+    # sheet_name = "test_call_queue"
+    # filename = os.path.join(DATA_DIR, 'daily', "call_apicases_daily.xlsx")
+    # excel = HandleExcel(filename, sheet_name)
+    # cases = excel.read_data()[0]
+    # print(cases)
+    # print(a.re_replace(cases))
     a = Context()
-    print(a.re_replace(cases))
+    print(a.re_replace('#client_daily_cno#'))

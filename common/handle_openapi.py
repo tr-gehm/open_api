@@ -16,22 +16,19 @@ from urllib import parse
 import hmac
 from hashlib import sha1
 import base64
-from common.handle_config import conf
+
+from common.do_consul import DoConsul
 from urllib.parse import urlencode
-from common.handle_path import DATA_DIR
 from common.config import *
 
-# protocol = conf.get("env", "protocol")
-# host = conf.get("env", "host")
-# expires = conf.get("env", "expires")
-# access_key_secret = conf.get("env", "accessKeySecret")
-# access_key_id = conf.get("env", "accessKeyId")
+
 protocol = config.get("env", "protocol")
 host = config.get("env", "host")
 expires = config.get("env", "expires")
+# access_key_secret = DoConsul().get_data()["accessKeySecret"]
+# access_key_id = DoConsul().get_data()["accessKeyId"]
 access_key_secret = config.get("env", "accessKeySecret")
 access_key_id = config.get("env", "accessKeyId")
-filename = os.path.join(DATA_DIR, "apicases.xlsx")
 
 
 class HandleOpenapi:
@@ -100,8 +97,10 @@ class HandleOpenapi:
 
 if __name__ == '__main__':
     # api = HandleOpenapi(path='copy_chat_records', method='GET')
-    api = HandleOpenapi(path='online', method='POST')
-    ur = api.sign(s="date=20210927")
+    api = HandleOpenapi(path='list_ticket_workflow', method='GET',)
+    ur = api.sign(s='category=3325&limit=10&offset=')
+    # s = "offset=0&limit=10"
 
     print(ur)
+
 

@@ -7,7 +7,6 @@
 @function：
 -------------------------------------------------
 """
-
 import openpyxl
 
 
@@ -71,12 +70,29 @@ class HandleExcel:
 
 #
 if __name__ == '__main__':
+    import os
+    from common.handle_path import DATA_DIR
+    import json
+    import jsonpath
+    from common.handle_data import EnvData
+
     # 调试读数据的代码
-    # excel = HandleExcel("cases.xlsx", "register")
-    # cases = excel.read_data()
-    # print(cases)
+    sheet_name = "test_call_client_extent"
+    filename = os.path.join(DATA_DIR, 'daily_c2', "call_apicases_daily.xlsx")
+    excel = HandleExcel(filename,sheet_name)
+    cases = excel.read_data()
+    print(cases)
+    a = cases[0].get('jsonpath_exp_save')
+    a = eval(a)
+
+    resp = {"status": 200, "message": "查询成功",
+         "result": [{"id": 45, "qno": "0000", "name": "产品组", "ticketStrategy": "online_average", "clients": []}]}
+
+    c = EnvData().re_par(a,resp)
+    print(c)
+
     # 调试写数据的代码
-    excel = HandleExcel("apicases.xlsx", "customer_params")
-    excel.write_data(row=1, column=1, value="python")
-    excel.write_data(row=2, column=1, value="java")
-    excel.write_data(row=2, column=2, value="c++")
+    # excel = HandleExcel("apicases.xlsx", "customer_params")
+    # excel.write_data(row=1, column=1, value="python")
+    # excel.write_data(row=2, column=1, value="java")
+    # excel.write_data(row=2, column=2, value="c++")

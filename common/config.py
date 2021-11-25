@@ -18,7 +18,7 @@ class ReadConfig:
         return self.config.get(section,option)
 
 
-config=ReadConfig()
+config = ReadConfig()
 if __name__ == '__main__':
-    host=config.get("call_sdk", "tel")
+    host = config.get("call_sdk", "tel")
     print(host)

@@ -17,13 +17,18 @@ class ChoseCase:
         根据关键词执行对应的测试用例。
         """
         print(case)
-        if case == 'call_success':
-            DIR = DEMO_DIR
-        elif input == 'all':
+        if case == 'daily':
+            DIR = DAILY_CALL_DIR
+        elif case == 'daily_c2':
+            DIR = DAILY_C2_CALL_DIR
+        elif case == 'daily_crm':
+            DIR = DAILY_CRM_DIR
+        elif case == 'all':
             DIR = CASE_DIR
         else:
             return 'BYEBYE'
         return DIR
+
 
 if __name__ == '__main__':
     print(ChoseCase().chosedir('adf'))

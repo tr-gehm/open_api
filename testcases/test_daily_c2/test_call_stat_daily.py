@@ -9,15 +9,11 @@
 报表统计日常回归用例
 """
 
-import os
-import unittest
-from common.handle_excel import HandleExcel
-from common.handle_request import HandleRequest
-from library.myddt import ddt, data
-from common.handle_path import DAILY_DIR_DATA
+
+from base_utils import *
 
 sheet_name = "test_call_stat"
-filename = os.path.join(DAILY_DIR_DATA, "call_apicases_daily.xlsx")
+filename = os.path.join(DAILY_C2_DIR_DATA, "call_apicases_daily.xlsx")
 
 
 @ddt
@@ -26,7 +22,7 @@ class TestCallQueueTestCase(unittest.TestCase):
     cases = excel.read_data()
 
     @data(*cases)
-    def test_call_queue_common(self, case):
+    def test_call_stat_common(self, case):
         expected = eval(case["expected"])
         row = case["case_id"] + 1
         self.response = HandleRequest.request_response(case)
