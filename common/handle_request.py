@@ -201,49 +201,6 @@ class HandleRequest:
             p.append(q)
         return p
 
-    # @staticmethod
-    # def replace_data(case):
-    #     """替换接口用例数据"""
-    #     data = case["data"]
-    #     # 替换data中的数据准备
-    #     date_time = HandleRequest.get_current_stamp()
-    #     name = "新增客户资料" + str(time.time())
-    #     # 在线客服聊天座席
-    #     cno = config.get("im_sdk", "cno")
-    #     # 呼叫sdk座席
-    #     call_cno = config.get("call_sdk", "cno")
-    #     # 座席设置座席
-    #     setting_cno = config.get("clink2_setting", "setting_cno")
-    #     # 呼叫号码
-    #     call_tel = config.get("call_sdk", "tel")
-    #     # 客户资料ID
-    #     # customer_id = str(getattr(EnvData, "customer_id"))
-    #     # session_id = getattr(EnvData, "session_id")
-    #     # session_start_time = getattr(EnvData, "session_start_time")
-    #     if case["data"]:
-    #         # 开始时间时间戳
-    #         data = data.replace("#startTime#", date_time[0])
-    #         # 结束时间时间戳
-    #         data = data.replace("#endTime#", date_time[1])
-    #         # 修改时间戳
-    #         data = data.replace("#updateStartTime#", date_time[0])
-    #         data = data.replace("#updateEndTime#", date_time[1])
-    #         # YYMMDD格式的日期20210903
-    #         data = data.replace("#date#", date_time[3])
-    #         # 获取形如2021-09-03 18:59:59的时间
-    #         data = data.replace("#dateStartTime#", date_time[4])
-    #         data = data.replace("#dateEndTime#", date_time[5])
-    #         data = data.replace("#name#", name)
-    #         data = data.replace("#tel#", HandleRequest.random_phone())
-    #         data = data.replace("#cno#", cno)
-    #         # data = data.replace("#session_id#", session_id)
-    #         # data = data.replace("#sessionTime#", session_start_time)
-    #         data = data.replace("#call_cno#", call_cno)
-    #         data = data.replace("#call_tel#", call_tel)
-    #         data = data.replace("#setting_cno#", setting_cno)
-    #         # data = data.replace("#id#", customer_id)
-    #     return data
-
 
 if __name__ == '__main__':
     sss = HandleRequest.get_current_stamp()
