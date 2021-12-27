@@ -75,43 +75,47 @@ class HandleRequest:
             response = request(method='post', url='http://www.baidu.com')
             return response
 
-
     @staticmethod
     def clink2_request(case):
         """clink2 页面接口专用"""
         # 测试数据进行转换,替换参数
-        if case["data"] != None:
-            data = json.loads(Context().re_replace(case["data"]))
-        # 获取请求方法
-        url = Context().re_replace(case["interface"])
-        method = case["method"]
-        # 根据客户端不同 获取不同的header。url
-        if case["target"] == 'console':
-            cookies = Context().re_replace({"Cookie":"#console_cookie#"})
-            cookies = json.loads(cookies.replace("'",'"'))
-            url = config.get('env', 'base_console_url') + url
-        else:
-            cookies = Context().re_replace({"Cookie":"#agent_cookie#"})
-            cookies = json.loads(cookies.replace("'", '"'))
-            url = config.get('env', 'base_agent_url') + url
-        # 请求方法。
-        if method.lower() in ['get','delete']:
-            log.info(f"用例--{case['title']}---请求url：{url}")
-            resp = request(method=method, url=url, cookies=cookies, verify=False)
-        elif method.lower() in ['post', 'put']:
-            log.info(f"用例--{case['title']}请求url：{url}")
-            log.info(f"用例--{case['title']}请求数据：{data}")
-            if case["content-type"] == "json":
-                resp = request(method=method, url=url, json=data, cookies=cookies,  verify=False)
+        if not case.get("skip"):
+            if case["data"] != None:
+                data = json.loads(Context().re_replace(case["data"]))
+            # 获取请求方法
+            url = Context().re_replace(case["interface"])
+            method = case["method"]
+            # 根据客户端不同 获取不同的header。url
+            if case["target"] == 'console':
+                cookies = Context().re_replace({"Cookie": "#console_cookie#"})
+                cookies = json.loads(cookies.replace("'", '"'))
+                url = config.get('env', 'base_console_url') + url
             else:
-                resp = request(method=method, url=url, data=data, cookies=cookies,  verify=False)
-        par = case.get('jsonpath_exp_save')
-        if par:
-            from common.handle_data import EnvData
-            if par != None:
-                re_par = EnvData().re_par(eval(par), resp.json())
-                print(re_par)
-        return resp
+                cookies = Context().re_replace({"Cookie": "#agent_cookie#"})
+                cookies = json.loads(cookies.replace("'", '"'))
+                url = config.get('env', 'base_agent_url') + url
+            # 请求方法。
+            if method.lower() in ['get', 'delete']:
+                log.info(f"用例--{case['title']}---请求url：{url}")
+                resp = request(method=method, url=url, cookies=cookies, verify=False)
+            elif method.lower() in ['post', 'put']:
+                log.info(f"用例--{case['title']}请求url：{url}")
+                log.info(f"用例--{case['title']}请求数据：{data}")
+                if case["content-type"] == "json":
+                    resp = request(method=method, url=url, json=data, cookies=cookies, verify=False)
+                else:
+                    resp = request(method=method, url=url, data=data, cookies=cookies, verify=False)
+            par = case.get('jsonpath_exp_save')
+            if par:
+                from common.handle_data import EnvData
+                if par != None:
+                    re_par = EnvData().re_par(eval(par), resp.json())
+                    print(re_par)
+            return resp
+        else:
+            log.info("用例跳过")
+            response = request(method='post', url='http://www.baidu.com')
+            return response
 
     @staticmethod
     def assert_res(self, expected, status_code, case, response, excel, row,actual=None):
